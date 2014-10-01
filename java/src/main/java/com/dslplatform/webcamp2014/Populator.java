@@ -1,11 +1,8 @@
 package com.dslplatform.webcamp2014;
 
-import java.util.concurrent.ExecutionException;
-
 import com.dslplatform.patterns.ServiceLocator;
 import com.dslplatform.webcamp2014.WebCamp2014.*;
 import com.dslplatform.webcamp2014.WebCamp2014.repositories.*;
-import java.io.IOException;
 import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 
