@@ -194,7 +194,7 @@ object Talk{
     , _URI = java.util.UUID.randomUUID.toString
     , _speaker = speaker
     , _speakerURI = speaker.URI
-    , _speakerID = ""
+    , _speakerID = speaker.name
     , _title = title
     , _track = track
     , _description = description
