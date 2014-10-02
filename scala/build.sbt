@@ -12,7 +12,7 @@ unmanagedResourceDirectories in Compile ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.dslplatform" %% "dsl-client-scala" % "0.9.0",
+  "com.dslplatform" %% "dsl-client-scala" % "0.9.1",
   "ch.qos.logback" % "logback-classic" % "1.1.2"
 )
 

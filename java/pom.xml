@@ -32,6 +32,9 @@
       <resource>
         <directory>${basedir}/src/generated/resources</directory>
       </resource>
+      <resource>
+        <directory>${basedir}/src/main/resources</directory>
+      </resource>
     </resources>
 
     <plugins>
