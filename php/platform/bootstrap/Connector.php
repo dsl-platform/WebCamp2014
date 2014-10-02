@@ -1,4 +1,4 @@
-<?php
+<?php // DO NOT MANAGE
 namespace NGS;
 
 abstract class Connector
@@ -35,13 +35,15 @@ abstract class Connector
         }
 
         curl_setopt_array($curl, array(
+            CURLOPT_SSL_VERIFYPEER => false,
+            CURLOPT_SSL_VERIFYHOST => false,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => $headers,
             CURLOPT_POSTFIELDS => $body,
             CURLOPT_POST => true,
             CURLOPT_HEADERFUNCTION => array('\NGS\Connector', 'headerParser')
         ));
-
+		
         $response = curl_exec($curl);
         $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         $error = curl_error($curl);

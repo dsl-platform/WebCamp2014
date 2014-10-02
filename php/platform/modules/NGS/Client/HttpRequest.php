@@ -27,6 +27,8 @@ class HttpRequest
         $this->curl = curl_init($uri);
 
         $this->options = array(
+            CURLOPT_SSL_VERIFYPEER  => false,
+            CURLOPT_SSL_VERIFYHOST  => false,
             CURLOPT_RETURNTRANSFER  => true,
             CURLINFO_HEADER_OUT     => true,
             CURLOPT_HEADER          => true
