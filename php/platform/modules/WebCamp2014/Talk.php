@@ -68,8 +68,8 @@ class Talk implements \IteratorAggregate
     {
         if(!array_key_exists('URI', $data))
             $data['URI'] = null; //a string representing a unique object identifier
-        if(!array_key_exists('speakerID', $data))
-            $data['speakerID'] = ''; // a string
+        //if(!array_key_exists('speakerID', $data))
+        //    $data['speakerID'] = ''; // a string
         if(!array_key_exists('title', $data))
             $data['title'] = ''; // a string of length 80
         if(!array_key_exists('track', $data))
@@ -94,7 +94,6 @@ class Talk implements \IteratorAggregate
     private function fromArray(array $data)
     {
         $this->provideDefaults($data);
-
         if(isset($data['URI']))
             $this->URI = \NGS\Converter\PrimitiveConverter::toString($data['URI']);
         unset($data['URI']);
