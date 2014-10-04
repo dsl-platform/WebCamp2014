@@ -15,7 +15,7 @@ object Populator {
 
     wait(speakerRep.insert(Seq(
       Speaker(
-        "Nikola Plejić ",
+        "Nikola Plejić",
         Some("@nikolaplejic"),
         "Currently running a small development shop in Zagreb called Neutrino..."),
       Speaker(

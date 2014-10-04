@@ -15,7 +15,7 @@ public final class Populator {
 
     speakerRep.insert(new Speaker[] {
         new Speaker(
-            "Nikola Plejić ",
+            "Nikola Plejić",
             "@nikolaplejic",
             "Currently running a small development shop in Zagreb called Neutrino..."),
         new Speaker(
